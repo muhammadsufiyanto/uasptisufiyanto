@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Kalkulator</title>
+</head>
+<body>
+
+<div align="left">
+<form name="calcu" action="#">
+<p>Masukan Angka 1<input type="text" name="input1" /></p>
+<p>Masukan Angka 2<input type="text" name="input2" /></p>
+<p>hasil  <input type="text" name="hasil" disabled="true" /></p>
+<p>operator <select name="opt"></p>
+ <option value="tambah"> +</option>
+ <option value="kurang"> -</option>
+ <option value="kali"> *</option>
+ <option value="bagi"> /</option>
+</select>
+<input type="button" value="hasil =" onClick="hitung()" />
+
+</form>
+</body>
+<script language="JavaScript" type="text/javascript">
+
+<!--
+
+function hitung(){
+
+var myForm = document.calcu;
+var input1=eval(myForm.input1.value);
+var input2=eval(myForm.input2.value);
+var pil= myForm.opt.value;
+if (pil == "tambah") {
+var jadi = input1 + input2;
+ }else if (pil == "kurang") 
+ {
+var jadi = input1 - input2;
+ } else if (pil == "kali") 
+ {
+var jadi = x * y;
+ } else if (pil == "bagi") 
+ {
+var jadi = x / y;
+ }
+ myForm.hasil.value = jadi;
+ myForm.x.value = "";
+ myForm.y.value = "";
+}
+
+
+//-->
+
+</script>
+</html>
